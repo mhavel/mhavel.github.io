@@ -1,33 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mathieu&#39;s Havel personal website</title>
+    <title>Mathieu Havel</title>
     <description>Research projects and results, codes/scripts sharing, and occasional news.
 </description>
     <link>http://mhavel.github.io/</link>
     <atom:link href="http://mhavel.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 04 Mar 2016 17:59:36 -0500</pubDate>
-    <lastBuildDate>Fri, 04 Mar 2016 17:59:36 -0500</lastBuildDate>
+    <pubDate>Sat, 05 Mar 2016 00:40:13 -0500</pubDate>
+    <lastBuildDate>Sat, 05 Mar 2016 00:40:13 -0500</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;It’s a long time question for me, what default theme of Jekyll Writer looks like? Days ago, Mailbox had gone. Today I copied the design of &lt;a href=&quot;https://blogs.dropbox.com/mailbox/&quot;&gt;Mailbox official blog&lt;/a&gt; for our default theme to remember this great app. Thanks Mailbox team.&lt;/p&gt;
-
-&lt;p&gt;This theme is published under MIT License, I hope you may like it =)&lt;/p&gt;
+        <title>Test post 7</title>
+        <description>&lt;p&gt;Test post 7&lt;/p&gt;
 </description>
-        <pubDate>Fri, 18 Dec 2015 08:45:10 -0500</pubDate>
-        <link>http://mhavel.github.io/2015/12/18/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://mhavel.github.io/2015/12/18/welcome-to-jekyll/</guid>
+        <pubDate>Fri, 04 Mar 2016 18:00:00 -0500</pubDate>
+        <link>http://mhavel.github.io/2016/03/04/test-page-7/</link>
+        <guid isPermaLink="true">http://mhavel.github.io/2016/03/04/test-page-7/</guid>
         
-        <category>Mailbox</category>
+        <category>News</category>
         
-        <category>Theme</category>
+        <category>MH</category>
+        
+        <category>tests</category>
         
         
-        <category>Theme</category>
+        <category>tests</category>
         
-        <category>Jekyll Writer</category>
+      </item>
+    
+      <item>
+        <title>Test post 6</title>
+        <description>&lt;p&gt;Test post 6&lt;/p&gt;
+</description>
+        <pubDate>Fri, 04 Mar 2016 18:00:00 -0500</pubDate>
+        <link>http://mhavel.github.io/2016/03/04/test-page-6/</link>
+        <guid isPermaLink="true">http://mhavel.github.io/2016/03/04/test-page-6/</guid>
+        
+        <category>News</category>
+        
+        <category>MH</category>
+        
+        <category>tests</category>
+        
+        
+        <category>tests</category>
+        
+      </item>
+    
+      <item>
+        <title>Test post 4</title>
+        <description>&lt;p&gt;Test post 4&lt;/p&gt;
+</description>
+        <pubDate>Fri, 04 Mar 2016 18:00:00 -0500</pubDate>
+        <link>http://mhavel.github.io/2016/03/04/test-page-4/</link>
+        <guid isPermaLink="true">http://mhavel.github.io/2016/03/04/test-page-4/</guid>
+        
+        <category>News</category>
+        
+        <category>MH</category>
+        
+        <category>tests</category>
+        
+        
+        <category>tests</category>
+        
+      </item>
+    
+      <item>
+        <title>Test post 3</title>
+        <description>&lt;p&gt;Test post 3&lt;/p&gt;
+</description>
+        <pubDate>Fri, 04 Mar 2016 18:00:00 -0500</pubDate>
+        <link>http://mhavel.github.io/2016/03/04/test-page-3/</link>
+        <guid isPermaLink="true">http://mhavel.github.io/2016/03/04/test-page-3/</guid>
+        
+        <category>News</category>
+        
+        <category>MH</category>
+        
+        <category>tests</category>
+        
+        
+        <category>tests</category>
+        
+      </item>
+    
+      <item>
+        <title>Test post 2</title>
+        <description>&lt;p&gt;Test post 2&lt;/p&gt;
+</description>
+        <pubDate>Fri, 04 Mar 2016 18:00:00 -0500</pubDate>
+        <link>http://mhavel.github.io/2016/03/04/test-page-2/</link>
+        <guid isPermaLink="true">http://mhavel.github.io/2016/03/04/test-page-2/</guid>
+        
+        <category>News</category>
+        
+        <category>MH</category>
+        
+        <category>tests</category>
+        
+        
+        <category>tests</category>
         
       </item>
     
