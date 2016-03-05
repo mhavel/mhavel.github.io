@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# REQUIREMENTS
+#   - hub: the git wrapper for GitHub
+#   - git credentials: https://help.github.com/articles/caching-your-github-password-in-git/
+
+
 getopt --test > /dev/null
 if [[ $? != 4 ]]; then
     echo "I’m sorry, `getopt --test` failed in this environment."
