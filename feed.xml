@@ -4,19 +4,47 @@
     <title>Mathieu Havel</title>
     <description>Research projects and results, codes/scripts sharing, and occasional news.
 </description>
-    <link>http://mhavel.github.io/</link>
-    <atom:link href="http://mhavel.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Mar 2016 00:40:13 -0500</pubDate>
-    <lastBuildDate>Sat, 05 Mar 2016 00:40:13 -0500</lastBuildDate>
+    <link>http://mhavel.net/</link>
+    <atom:link href="http://mhavel.net/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 05 Mar 2016 05:01:40 -0500</pubDate>
+    <lastBuildDate>Sat, 05 Mar 2016 05:01:40 -0500</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>New website!</title>
+        <description>&lt;p&gt;Welcome to my (new) website. In here, you’ll find some of the projects
+I’m working on, some codes and scripts I wrote, and some results I’ve
+published (or made available to the public).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Who am I?: &lt;a href=&quot;/about/&quot;&gt;about me&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;What do I do?: &lt;a href=&quot;/science/&quot;&gt;my research&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Codes and scripts: &lt;a href=&quot;/codes/&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Data: &lt;a href=&quot;/resources/&quot;&gt;there&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 04 Mar 2016 18:00:00 -0500</pubDate>
+        <link>http://mhavel.net/2016/03/04/welcome/</link>
+        <guid isPermaLink="true">http://mhavel.net/2016/03/04/welcome/</guid>
+        
+        <category>News</category>
+        
+        <category>MH</category>
+        
+        
+        <category>News</category>
+        
+        <category>MH</category>
+        
+      </item>
     
       <item>
         <title>Test post 7</title>
         <description>&lt;p&gt;Test post 7&lt;/p&gt;
 </description>
         <pubDate>Fri, 04 Mar 2016 18:00:00 -0500</pubDate>
-        <link>http://mhavel.github.io/2016/03/04/test-page-7/</link>
-        <guid isPermaLink="true">http://mhavel.github.io/2016/03/04/test-page-7/</guid>
+        <link>http://mhavel.net/2016/03/04/test-page-7/</link>
+        <guid isPermaLink="true">http://mhavel.net/2016/03/04/test-page-7/</guid>
         
         <category>News</category>
         
@@ -34,8 +62,8 @@
         <description>&lt;p&gt;Test post 6&lt;/p&gt;
 </description>
         <pubDate>Fri, 04 Mar 2016 18:00:00 -0500</pubDate>
-        <link>http://mhavel.github.io/2016/03/04/test-page-6/</link>
-        <guid isPermaLink="true">http://mhavel.github.io/2016/03/04/test-page-6/</guid>
+        <link>http://mhavel.net/2016/03/04/test-page-6/</link>
+        <guid isPermaLink="true">http://mhavel.net/2016/03/04/test-page-6/</guid>
         
         <category>News</category>
         
@@ -53,8 +81,8 @@
         <description>&lt;p&gt;Test post 4&lt;/p&gt;
 </description>
         <pubDate>Fri, 04 Mar 2016 18:00:00 -0500</pubDate>
-        <link>http://mhavel.github.io/2016/03/04/test-page-4/</link>
-        <guid isPermaLink="true">http://mhavel.github.io/2016/03/04/test-page-4/</guid>
+        <link>http://mhavel.net/2016/03/04/test-page-4/</link>
+        <guid isPermaLink="true">http://mhavel.net/2016/03/04/test-page-4/</guid>
         
         <category>News</category>
         
@@ -72,8 +100,8 @@
         <description>&lt;p&gt;Test post 3&lt;/p&gt;
 </description>
         <pubDate>Fri, 04 Mar 2016 18:00:00 -0500</pubDate>
-        <link>http://mhavel.github.io/2016/03/04/test-page-3/</link>
-        <guid isPermaLink="true">http://mhavel.github.io/2016/03/04/test-page-3/</guid>
+        <link>http://mhavel.net/2016/03/04/test-page-3/</link>
+        <guid isPermaLink="true">http://mhavel.net/2016/03/04/test-page-3/</guid>
         
         <category>News</category>
         
@@ -91,8 +119,8 @@
         <description>&lt;p&gt;Test post 2&lt;/p&gt;
 </description>
         <pubDate>Fri, 04 Mar 2016 18:00:00 -0500</pubDate>
-        <link>http://mhavel.github.io/2016/03/04/test-page-2/</link>
-        <guid isPermaLink="true">http://mhavel.github.io/2016/03/04/test-page-2/</guid>
+        <link>http://mhavel.net/2016/03/04/test-page-2/</link>
+        <guid isPermaLink="true">http://mhavel.net/2016/03/04/test-page-2/</guid>
         
         <category>News</category>
         
