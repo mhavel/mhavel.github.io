@@ -13,7 +13,7 @@ fi
 
 
 # options: default:
-_logs="deployement.log.txt"     # option: -l
+_logs="log_deploy.txt"          # option: -l
 _verbose=0                      # option: -v
 _message="updated website"      # option: -m
 _msg_file=""                    # option: -f
@@ -25,7 +25,7 @@ _ghuser=$USER
 SHORT=m:f:b:l:u:v
 LONG=message,file,branch,log,user,verbose
 PARSED=`getopt --options $SHORT --longoptions $LONG --name "$0" -- "$@"`
-CMD="$@"
+CMD="$0 $@"
 if [[ $? != 0 ]]; then
     exit 2
 fi
@@ -77,34 +77,39 @@ fi
 _target=$1
 
 #echo "verbose: $v, force: $f, debug: $d, in: $1, out: $outFile"
-echo $CMD > $_logs
+echo -e "Log for the command: $CMD\n" > $_logs
 
 # run a command and check it succeeded
 function run_cmd {
-    "$@" 1>>$_logs 2>>$_logs
+    local _end=""
+    if [ $_verbose -ne 0 ] ; then
+        echo -n "executing: $@"
+        echo "## executing: $@" >> $_logs
+        _end="\t[done]\n"
+    fi
+    eval "$@ 1>>$_logs 2>>$_logs"
+    # "$@" 1>>$_logs 2>>$_logs
+    echo -e $_end
+    echo "" >> $_logs
     local retc=$?
     if [ $retc -ne 0 ]; then
-        echo "error with $1 (exit code: $retc)" >&2
+        echo "ERROR: with $1 (exit code: $retc)" >&2
         exit $retc
-    else
-        if [ _verbose -ne 0 ] ; then
-            echo "$1"
-        fi
     fi
 }
 
 
 # build...
-run_cmd (cd $_target && jekyll build)
+run_cmd "(cd $_target && jekyll build)"
 
 # Copy the lastest version to the root of the website
-run_cmd cp -r $_target/_site/* .
+run_cmd "cp -r $_target/_site/* ."
 
 # commit
 if [ -z "$_msg_file" ] ; then
-    _git_commit_opts="-m '$_message'"
+    _git_commit_opts="-a -m '$_message'"
 else
-    _git_commit_opts="-F $_msg_file"
+    _git_commit_opts="-a -F $_msg_file"
 fi
 
 _gh="$_ghuser".github.io
@@ -112,13 +117,13 @@ _gh="$_ghuser".github.io
 
 if [ "$_branch" != "master" ] ; then
     # make a new branch and pull request...
-    run_cmd hub checkout -b $_branch
-    run_cmd hub commit $_git_commit_opts
-    run_cmd hub push $_ghuser $_branch
-    run_cmd hub pull-request                # open a text editor for your pull request message
+    run_cmd "hub checkout -b $_branch"
+    run_cmd "hub commit $_git_commit_opts"
+    run_cmd "hub push $_gh $_branch"
+    run_cmd "hub pull-request"                # open a text editor for your pull request message
 else
     # make a direct commit
-    run_cmd hub commit $_git_commit_opts    # commit the changes (local). This can be undone by "git reset --soft HEAD~1"
-    run_cmd hub push $_ghuser $_branch      # push the changes to the remote repository
+    run_cmd "hub commit $_git_commit_opts"    # commit the changes (local). This can be undone by "git reset --soft HEAD~1"
+    run_cmd "hub push origin $_branch"        # push the changes to the remote repository
 fi
 
