@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# REQUIREMENTS
+#   - hub: the git wrapper for GitHub
+#   - git credentials: https://help.github.com/articles/caching-your-github-password-in-git/
+
+
 getopt --test > /dev/null
 if [[ $? != 4 ]]; then
     echo "I’m sorry, `getopt --test` failed in this environment."
@@ -119,7 +124,7 @@ if [ "$_branch" != "master" ] ; then
     # make a new branch and pull request...
     run_cmd "hub checkout -b $_branch"
     run_cmd "hub commit $_git_commit_opts"
-    run_cmd "hub push $_gh $_branch"
+    run_cmd "hub push origin $_branch"
     run_cmd "hub pull-request"                # open a text editor for your pull request message
 else
     # make a direct commit
