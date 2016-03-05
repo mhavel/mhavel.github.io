@@ -92,7 +92,7 @@ function run_cmd {
         echo "## executing: $@" >> $_logs
         _end="\t[done]\n"
     fi
-    eval "$@ 1>>$_logs 2>>$_logs"
+    eval "$@ 1>>$_logs 2>>$_logs | tee $_logs"
     # "$@" 1>>$_logs 2>>$_logs
     echo -e $_end
     echo "" >> $_logs
@@ -128,6 +128,7 @@ if [ "$_branch" != "master" ] ; then
     run_cmd "hub pull-request"                # open a text editor for your pull request message
 else
     # make a direct commit
+    run_cmd "hub checkout -b $_branch"
     run_cmd "hub commit $_git_commit_opts"    # commit the changes (local). This can be undone by "git reset --soft HEAD~1"
     run_cmd "hub push origin $_branch"        # push the changes to the remote repository
 fi
