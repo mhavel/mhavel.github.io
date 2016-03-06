@@ -1,3 +1,7 @@
 src/
 .sass-cache
 log_*
+*.aux
+*.bbl
+*.blg
+bib2html*
