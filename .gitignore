@@ -4,4 +4,5 @@ log_*
 *.aux
 *.bbl
 *.blg
+*.back
 bib2html*
