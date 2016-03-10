@@ -15,9 +15,11 @@ mhavel.ready = function() {
     // selector cache
     var
         mobileWidth         = 700,      // px
+        tabletWidth         = 991,      // px
         $document           = $(document),
         $topmenu            = $('#top-menu'),
         $topbtns            = $('#top-links'),
+        $homeCards          = $('.cards'),
         $sidebtn            = $('#sidebar-button'),
         $sidemenu           = $('#sidebar-menu'),
 
@@ -41,7 +43,8 @@ mhavel.ready = function() {
     $sidemenu
         .sidebar('attach events', '#sidebar-button>.item');
 
-    if($(window).width() > mobileWidth) {
+    var curW = $(window).width();
+    if(curW > mobileWidth) {
         $('body')
             .visibility({
                 offset         : -10,
@@ -53,12 +56,7 @@ mhavel.ready = function() {
                         $topmenu
                             .addClass('light fixed')
                             .transition('scale in', 750)
-                            //.find('.menu')
-                            //.removeClass('inverted')
                         ;
-                        //$('.following .additional.item')
-                        //    .transition('scale in', 750)
-                        //;
                     });
                 },
                 onTopPassedReverse: function() {
@@ -67,10 +65,6 @@ mhavel.ready = function() {
                             .removeClass('light fixed')
                             .transition('scale out', 150)
                             .transition('fade down', 400)
-                            //.find('.menu')
-                            //.addClass('inverted')
-                            //.find('.additional.item')
-                            //.transition('hide')
                         ;
                     });
                 }
@@ -78,6 +72,9 @@ mhavel.ready = function() {
         ;
         $topbtns.show();
         //$sidebtn.hide();
+        if ( curW <= tabletWidth ) {
+            $homeCards.removeClass('three').addClass('two');
+        }
     }
     else {
         //$topbtns.hide();
@@ -94,6 +91,12 @@ mhavel.ready = function() {
         else {
             $topbtns.show();
             $sidebtn.hide();
+        }
+        if ( vpw <= tabletWidth ){
+            $homeCards.removeClass('three').addClass('two');
+        }
+        else {
+            $homeCards.removeClass('two').addClass('three');
         }
     });
 

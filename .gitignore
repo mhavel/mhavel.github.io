@@ -6,3 +6,5 @@ log_*
 *.blg
 *.back
 bib2html*
+ui/hljs_worker.js
+ui/mhavel.snippets.js
