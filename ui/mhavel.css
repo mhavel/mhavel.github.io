@@ -1,0 +1,20 @@
+/** Personal settings **/
+
+/* Fixed menu: background */
+.ui.menu.light.fixed {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+div.footer {
+  position: absolute;
+  height: 65px;
+}
+
+.full.height {
+  min-height: calc(100vh - 65px);
+  height: 100%;
+  bottom: 0;
+  top: 0;
+}
+

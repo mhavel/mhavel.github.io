@@ -12,8 +12,9 @@
   <link rel="alternate" type="application/rss+xml" title="Mathieu Havel Feed" href="/feed.xml" />
   <link rel="stylesheet" type="text/css" href="/ui/semantic.min.css">
   <!-- <link rel="stylesheet" href="/ui/font-awesome.min.css"> -->
-  <link rel="stylesheet" href="/ui/main.css">
+  <link rel="stylesheet" href="/ui/mhavel.css">
   <link rel="stylesheet" href="/ui/syntax.css">
+  
   <link rel="canonical" href="http://mhavel.net/about/">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -22,7 +23,7 @@
 
 
   <body>
-    <div class="ui right sidebar inverted vertical labeled icon menu">
+    <div class="ui right sidebar inverted vertical labeled icon menu" id="sidebar-menu">
   
     
   
@@ -80,101 +81,103 @@
   
 </div>
 
-    <div class="ui grid top attached">
-      
+    <div class="pusher">
+        <div class="full height">
+            
 
 
-<div class="computer tablet only row">
-  <header class="ui top fixed borderless menu">
-    <a href="/" class="brand item">
-      <img src="/assets/mhavel.png"></img>
-      Mathieu Havel
-    </a>
-    <div class="ui labeled icon borderless secondary pointing right green small menu" id="top-links">
-      
-        
-      
-        
-          
-          <a class="item active" href="/about/">
-            <i class="question icon"></i>
-            About
-          </a>
-        
-      
-        
-          
-          <a class="item " href="/codes/">
-            <i class="code icon"></i>
-            Codes
-          </a>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-          
-          <a class="item " href="/papers/">
-            <i class="book icon"></i>
-            Papers
-          </a>
-        
-      
-        
-          
-          <a class="item " href="/resources/">
-            <i class="archive icon"></i>
-            Resources
-          </a>
-        
-      
-        
-          
-          <a class="item " href="/science/">
-            <i class="flask icon"></i>
-            Science
-          </a>
-        
-      
-        
-      
+
+<div class="following bar">
+    <div class="ui container">
+        <div class="ui large secondary network menu" id="top-menu">
+            <a class="brand item" href="/">
+                <img class="ui image" src="/assets/mhavel.png" style="height:50px;">
+                Mathieu Havel
+            </a>
+            <div class="ui labeled icon borderless secondary pointing right small green menu" id="sidebar-button" style="display: none;">
+                <a class="item"><i class="sidebar icon"></i>Menu</a>
+            </div>
+            <div class="ui labeled icon borderless secondary pointing right green small menu" id="top-links" style="display: none;">
+            
+                
+            
+                
+                    
+                <a class="item active" href="/about/">
+                    <i class="question icon"></i>
+                    About
+                </a>
+                
+            
+                
+                    
+                <a class="item " href="/codes/">
+                    <i class="code icon"></i>
+                    Codes
+                </a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    
+                <a class="item " href="/papers/">
+                    <i class="book icon"></i>
+                    Papers
+                </a>
+                
+            
+                
+                    
+                <a class="item " href="/resources/">
+                    <i class="archive icon"></i>
+                    Resources
+                </a>
+                
+            
+                
+                    
+                <a class="item " href="/science/">
+                    <i class="flask icon"></i>
+                    Science
+                </a>
+                
+            
+                
+            
+            </div>
+        </div>
     </div>
-  </header>
-</div>
-<div class="mobile only row">
-  <header class="ui top fixed borderless menu">
-    <a href="/" class="brand item">
-      <img src="/assets/mhavel.png"></img>
-      Mathieu Havel
-    </a>
-    <div class="ui labeled icon borderless secondary pointing right small green menu" id="sidebar-button">
-      <a class="item"><i class="sidebar icon"></i>Menu</a>
-    </div>
-  </header>
 </div>
 
-    </div class="ui grid">
-    <div class="ui pusher bottom attached">
-      <div class="ui hidden section divider"></div>
-      <div class="ui hidden section divider"></div>
-      <div class="ui hidden section divider"></div>
-      <main class="ui main top attached stackable grid container">
-        <article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">About</h1>
-  </header>
-
-  <div class="post-content">
-    <p>This is my personal website (under construction).</p>
+            <div class="article">
+                
+                <div class="ui basic inverted segment">
+                    <div class="ui container">
+                        <h2 class="ui grey inverted header">
+                            
+                            <i class="question icon"></i>
+                            
+                            <div class="content">
+                                About
+                                <div class="sub header">&#8230;</div>
+                            </div>
+                        </h2>
+                    </div>
+                </div>
+                
+                <div class="ui main container">
+                    <article class="post">
+   <p>This is my personal website (under construction).</p>
 
 <h4 id="sciences">Sciences</h4>
 
@@ -191,15 +194,15 @@ I’m doing modeling of the evolution and structure of sufficiently well charact
 
 <p><a href="mailto:%6D%61%74%68%69%65%75.%68%61%76%65%6C@%63%6F%6C%75%6D%62%69%61.%65%64%75" title="Contact me">Email</a></p>
 
-  </div>
-
 </article>
 
-      </main>
-      <div class="ui vertical footer segment">
-  <div class="ui container">
-    <div class="ui divider"></div>
-    <div class="ui stackable divided grid">
+                </div>
+
+            </div>
+        </div>
+        <div class="ui vertical footer attached segment">
+  <div class="ui center aligned container">
+    <div class="ui stackable grid">
       <div class="five wide computer only column">
         <div class="ui horizontal link list">
           <a class="disabled item" href="#">&copy; 2016 Mathieu Havel</a>
@@ -211,7 +214,6 @@ I’m doing modeling of the evolution and structure of sufficiently well charact
             <i class="github alternate icon"></i>
             GitHub
           </a>
-          <!-- &nbsp; -->
           <a class="item" href="mailto:%6D%61%74%68%69%65%75.%68%61%76%65%6C@%63%6F%6C%75%6D%62%69%61.%65%64%75" title="Email">
             <i class="icon mail"></i>
             Email
@@ -220,11 +222,10 @@ I’m doing modeling of the evolution and structure of sufficiently well charact
       </div>
       <div class="six wide center aligned computer only column">
         <div class="ui small horizontal bulleted link list">
-          <a class="item" href="https://github.com/mhavel">
+          <a class="item" href="https://github.com/mhavel" target="_blank">
             <i class="github alternate icon"></i>
             GitHub
           </a>
-          <!-- &nbsp; -->
           <a class="item" href="mailto:%6D%61%74%68%69%65%75.%68%61%76%65%6C@%63%6F%6C%75%6D%62%69%61.%65%64%75" title="Email">
             <i class="icon mail"></i>
             Email
@@ -240,23 +241,27 @@ I’m doing modeling of the evolution and structure of sufficiently well charact
 </div>
 
     </div>
-
-    
-
+    <script src="/ui/mhavel.js"></script>
 
 
-<script>
-  $(document)
-    .ready(function() {
 
-      // fix menu when passed
-      $('.right.sidebar')
-        .sidebar('attach events', '#sidebar-button>.item')
-        .sidebar('setting', 'transition', 'overlay');
 
-      
-    });
-</script>
+
+
+<!--<script>-->
+  <!--$(document)-->
+    <!--.ready(function() {-->
+
+      <!--// fix menu when passed-->
+      <!--$('.right.sidebar')-->
+        <!--.sidebar('attach events', '#sidebar-button>.item')-->
+        <!--.sidebar({-->
+          <!--dimPage: true,-->
+          <!--transition: 'overlay',-->
+          <!--mobileTransition : 'uncover'-->
+        <!--});-->
+    <!--});-->
+<!--</script>-->
 
   </body>
 
