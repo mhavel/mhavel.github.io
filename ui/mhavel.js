@@ -19,7 +19,7 @@ mhavel.ready = function() {
         tabletWidth         = 991,      // px
         $document           = $(document),
         $window             = $(window),
-        $follwingBar        = $('.following.bar'),
+        $followingBar       = $('.following.bar'),
         $topblank           = $('.topblank'),
         $topmenu            = $('#top-menu'),
         $topbtns            = $('#top-links'),
@@ -49,32 +49,32 @@ mhavel.ready = function() {
     if(curH > mobileHeight) {
         $('body')
             .visibility({
-                offset         : -10,
+                offset         : 0,
                 observeChanges : false,
                 once           : false,
                 continuous     : false,
                 onTopPassed: function() {
                     requestAnimationFrame(function() {
-                        $follwingBar
+                        $followingBar
                             .addClass('fixed')
                         ;
                     });
                 },
                 onTopPassedReverse: function() {
                     requestAnimationFrame(function() {
-                        $follwingBar
+                        $followingBar
                             .removeClass('fixed')
                         ;
                     });
                 }
             })
         ;
-        $follwingBar.removeClass('light fixed');
-        $topblank.removeClass('light');
+        //$followingBar.removeClass('fixed');
+        //$followingBar.removeClass('light fixed');
+        //$topblank.removeClass('light');
     }
     else {
-        $follwingBar.addClass('light fixed');
-        $topblank.addClass('light');
+        $followingBar.removeClass('fixed');
     }
     if (curW > mobileWidth) {
         $topbtns.show();
