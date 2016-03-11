@@ -47,7 +47,7 @@ mhavel.ready = function() {
     if(curW > mobileWidth) {
         $('body')
             .visibility({
-                offset         : -10,
+                offset         : -30,
                 observeChanges : false,
                 once           : false,
                 continuous     : false,
