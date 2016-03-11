@@ -15,8 +15,12 @@ mhavel.ready = function() {
     // selector cache
     var
         mobileWidth         = 700,      // px
+        mobileHeight        = 700,      // px
         tabletWidth         = 991,      // px
         $document           = $(document),
+        $window             = $(window),
+        $follwingBar        = $('.following.bar'),
+        $topblank           = $('.topblank'),
         $topmenu            = $('#top-menu'),
         $topbtns            = $('#top-links'),
         $homeCards          = $('.cards'),
@@ -27,10 +31,7 @@ mhavel.ready = function() {
             || window.mozRequestAnimationFrame
             || window.webkitRequestAnimationFrame
             || window.msRequestAnimationFrame
-            || function(callback) { setTimeout(callback, 0); },
-
-        // alias
-        handler
+            || function(callback) { setTimeout(callback, 0); }
     ;
 
     // main sidebar
@@ -43,42 +44,46 @@ mhavel.ready = function() {
     $sidemenu
         .sidebar('attach events', '#sidebar-button>.item');
 
-    var curW = $(window).width();
-    if(curW > mobileWidth) {
+    var curH = $window.height(),
+        curW = $window.width();
+    if(curH > mobileHeight) {
         $('body')
             .visibility({
-                offset         : -30,
+                offset         : -10,
                 observeChanges : false,
                 once           : false,
                 continuous     : false,
                 onTopPassed: function() {
                     requestAnimationFrame(function() {
-                        $topmenu
-                            .addClass('light fixed')
-                            .transition('scale in', 750)
+                        $follwingBar
+                            .addClass('fixed')
                         ;
                     });
                 },
                 onTopPassedReverse: function() {
                     requestAnimationFrame(function() {
-                        $topmenu
-                            .removeClass('light fixed')
-                            .transition('scale out', 150)
-                            .transition('fade down', 400)
+                        $follwingBar
+                            .removeClass('fixed')
                         ;
                     });
                 }
             })
         ;
+        $follwingBar.removeClass('light fixed');
+        $topblank.removeClass('light');
+    }
+    else {
+        $follwingBar.addClass('light fixed');
+        $topblank.addClass('light');
+    }
+    if (curW > mobileWidth) {
         $topbtns.show();
-        //$sidebtn.hide();
         if ( curW <= tabletWidth ) {
             $homeCards.removeClass('three').addClass('two');
         }
     }
     else {
-        //$topbtns.hide();
-        $sidebtn.show();
+        $sidebtn.show()
     }
 
     // on resize of the page

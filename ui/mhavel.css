@@ -1,10 +1,47 @@
 /** Personal settings **/
 
 /* Fixed menu: background */
-.ui.menu.light.fixed {
-  background-color: rgba(255, 255, 255, 0.9);
+/*.following.bar.fixed > .container > .menu {*/
+  /*background-color: rgba(255, 255, 255, 0.9);*/
+/*}*/
+
+.following.bar {
+  position: fixed;
+  top: 0;
+  z-index: 900;
+  left: 0;
+  padding: 2em 0;
+  width: 100%;
+  box-shadow: 0 0 0 0 transparent;
+  border-bottom: 1px solid transparent;
+  transition: padding 0.5s ease, background 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
 }
 
+.following.bar.fixed {
+  padding: 0 0 1em 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #DDDDDD;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.04);
+}
+
+.following.bar.light.fixed {
+  padding: 0 0 0 0;
+}
+
+.topblank {
+  z-index: 1;
+  margin: 0;
+  min-height: 101px;
+  box-shadow: none;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  transition: min-height 0.5s ease;
+}
+
+.topblank.light {
+  min-height: 74px;
+}
 
 div.footer {
   position: absolute;
